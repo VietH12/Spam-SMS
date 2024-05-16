@@ -25,5 +25,7 @@ Chương trình phân loại tin nhắn là có phải là thư rác (spam) hay 
 * Bộ dữ liệu test từ UCI Irvine mã 228
   
 ##  📫 Usage:-
-1.``` python serverNumber.py ```
+1.Chạy app:
+``` python serverNumber.py ```
+
 2. http://127.0.0.1:5000
