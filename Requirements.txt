@@ -1,0 +1,6 @@
+Flask
+BeautyfulSoup
+Joblib
+requests
+pandas
+numpy
