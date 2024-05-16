@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message and Spam Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="light-mode">
+    <div class="header">
+        <h1>SMS SPAM DETECTOR</h1>
+    </div>
+    <div class="theme-switch-wrapper">
+        <span class="theme-switch">
+            <span class="theme-icon sun">&#9728;</span> 
+            <label class="theme-switch-control">
+                <input type="checkbox" id="theme-switch-checkbox" onclick="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
+            <span class="theme-icon moon">&#9790;</span> 
+        </span>
+    </div>
+    
+    <form method="post">
+        <label for="phone_number">Phone Number:</label>
+        <input type="text" id="phone_number" name="phone_number" placeholder="Enter phone number" value="{{ phone_number }}">
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if results %}
+        <h2>Messages and Classifications:</h2>
+        <ul>
+        {% for message, classification, probability in results %}
+            {% if classification == '' %}
+                <li class="error">
+                    {{ message|safe }}  
+                </li>
+            {% else %}
+                <li>
+                    {{ message }} - 
+                    <strong class="{{ 'spam' if classification == 'Spam' else 'not-spam' }}">
+                        {{ classification }}
+                    </strong>
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+
+    <script>
+    function toggleTheme() {
+        var checkbox = document.getElementById('theme-switch-checkbox');
+        var body = document.body;
+        if (checkbox.checked) {
+            body.classList.add('dark-mode');
+            body.classList.remove('light-mode');
+        } else {
+            body.classList.add('light-mode');
+            body.classList.remove('dark-mode');
+        }
+    }
+
+    </script>
+</body>
+</html>

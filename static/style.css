@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff; /
+}
+
+/* Styling header */
+.header {
+    width: 100%;  
+    background-color: #007AC7;  
+    color: white;  
+    text-align: center;
+    padding: 20px 0;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    margin-bottom: 20px;  
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 100px;  
+    margin: 0;  
+    font-weight: bold;  
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;  
+    margin: 0;  
+    font-weight: bold;
+    text-align: center;  
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button styling for theme toggle */
+button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* Form styling */
+form {
+    margin: 20px;
+    text-align: center;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: left;
+}
+
+li {
+    font-size: 16px;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+    font-weight: bold;
+}
+
+label {
+    font-size: 30px;
+}
+
+.theme-switch-wrapper {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+.theme-icon {
+    display: inline-block;
+    font-size: 24px; 
+    margin: 0 10px; 
+}
+
+.theme-switch-control {
+    position: relative;
+    display: inline-block;
+    width: 50px; 
+    height: 24px; 
+}
+
+.theme-switch-control input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; 
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000000; 
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Styling light-mode */
+.light-mode {
+    background-color: #FFFFFF;
+}
+
+.light-mode .header {
+    background-color: #007AC7; 
+}
+
+.light-mode input[type="text"] {
+    background-color: #41B0EE; 
+    color: #FDFDFD; 
+    border: 2px solid #000000;
+}
+
+.light-mode input[type="submit"] {
+    background-color: #007AC7;
+    color: #FDFDFD;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+.light-mode input[type="text"]:focus,
+.light-mode input[type="submit"]:hover {
+    background-color: #41B0EE;
+    color: #FDFDFD;
+}
+
+.light-mode label {
+    color: #007AC7;
+    font-weight: bold;
+}
+
+.light-mode h2 {
+    color: #007AC7;
+}
+
+.light-mode li {
+    color: #000000;
+}
+
+.light-mode .spam {
+    color: red; 
+}
+.light-mode .not-spam {
+    color: green; 
+}
+
+
+.light-mode .error {
+    color: red; 
+    font-weight: normal;
+}
+
+.light-mode .theme-icon {
+    color: #fff; 
+}
+
+/* Styling dark-mode */
+.dark-mode {
+    background-color: #000000;
+}
+
+.dark-mode .header {
+    background-color: #2C9CD9; 
+    color: #001A1D;
+}
+
+.dark-mode input[type="text"] {
+    background-color: #58B8EE; 
+    color: #000000; 
+    border: 2px solid #DEDEDE; 
+}
+
+.dark-mode input[type="submit"] {
+    background-color: #2C9CD9;
+    color: #FFFFFF;
+    border: 2px solid #DEDEDE;
+    cursor: pointer;
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="submit"]:hover {
+    background-color: #58B8EE;
+    color: #000000;
+}
+.dark-mode label{
+    color: #DEDEDE;
+}
+
+.dark-mode h2 {
+    color: #2C9CD9;
+}
+
+.dark-mode li {
+    color: #DEDEDE;
+}
+
+.dark-mode .spam {
+    color: #FF594F; 
+}
+.dark-mode .not-spam {
+    color: lightgreen; 
+}
+
+.dark-mode .theme-icon {
+    color: #fff; 
+}
+
+.dark-mode .error {
+    color: #FF594F; 
+    font-weight: normal;
+}
+
+.dark-mode .theme-icon {
+    color: #000; 
+}
+
+
