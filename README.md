@@ -25,8 +25,8 @@ Chương trình phân loại tin nhắn là có phải là thư rác (spam) hay 
 ![Workflow of SMS SPAM](Workflow.png)
 
 ## DATASET
-* Bộ dữ liệu train từ Kaggle: SMS Spam Collection là một tập hợp các tin nhắn được gắn thẻ SMS đã được thu thập để nghiên cứu SMS Spam. Nó chứa một bộ tin nhắn SMS bằng tiếng Anh gồm 5.574 tin nhắn, được gắn thẻ là ham (hợp pháp) hoặc spam. [link](https://www.kaggle.com/uciml/sms-spam-collection-dataset/download).
-* Bộ dữ liệu test từ UCI Irvine mã 228
+* Bộ dữ liệu từ Kaggle: SMS Spam Collection là một tập hợp các tin nhắn được gắn thẻ SMS đã được thu thập để nghiên cứu SMS Spam. Nó chứa một bộ tin nhắn SMS bằng tiếng Anh gồm 5.574 tin nhắn, được gắn thẻ là ham (hợp pháp) hoặc spam. [link](https://www.kaggle.com/uciml/sms-spam-collection-dataset/download).
+* Bộ dữ liệu từ UCI Irvine mã 228
   
 ##  USAGE
 1.Chạy app:
