@@ -20,7 +20,7 @@ Chương trình phân loại tin nhắn là có phải là thư rác (spam) hay 
 + pandas
 + numpy
 
-## Workflow; -
+## Workflow:
 
 ![Workflow of SMS SPAM](Workflow.png)
 
