@@ -32,5 +32,6 @@ Chương trình phân loại tin nhắn là có phải là thư rác (spam) hay 
 1.Chạy app:
 ```bash
 python serverNumber.py 
+```
 
 2. http://127.0.0.1:5000
