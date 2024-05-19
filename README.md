@@ -29,9 +29,9 @@ Chương trình phân loại tin nhắn là có phải là thư rác (spam) hay 
 * Bộ dữ liệu từ UCI Irvine mã 228
   
 ##  USAGE
-1.Chạy app:
+1. Chạy app:
 ```bash
 python serverNumber.py 
 ```
 
-2. http://127.0.0.1:5000
+2. Chạy link được cung cấp: ``` http://127.0.0.1:5000 ```
